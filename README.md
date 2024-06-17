@@ -33,7 +33,7 @@ The function finally returns the probability array.
 The user is given the option to draw the circuit of the factorization funtion. The option exists primarily to save time if the user is not interested in the circuit. Also, if the cicuit is too large, Jupyter may simply refuse to draw it.
 The number of iterations used for drawing the circuit is limited to 1 for the same reason as given above.
 
-p and q are the factors and are initialized to the value returned by np.argmax(factorizatio), which returns the postion of the states with maximum probabilty, which are precisely our factors.
+p and q are the factors and are initialized to the value returned by np.argmax(factorization), which returns the postion of the states with maximum probabilty, which are precisely our factors.
 
 Again, this algorithm is very sensitive to the number of qubits assigned to the x and y registers. To generalize the code to most N, the number of qubits assigned to the x and y registers are just enough to make sure correct flipping and amplification takes place in at least ONE of the registers. Thus, as a compromise the if-else statement is included.
 The if-else statement identifies the smaller factor and divides N by it to find the other factor.
