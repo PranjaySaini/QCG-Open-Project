@@ -44,7 +44,7 @@ The factors are then printed.
 1. Factorization_code.ipynb
 2. Demonstration_on_35.ipynb
 3. Demonstration_on_115.ipynb
-4. Demonstration_on_893.ipynb (This takes the longest time to process, and since the circuit is too large to be draw, I have selected note to draw it.)
+4. Demonstration_on_893.ipynb (This takes the longest time to process, and since the circuit is too large to be draw, I have selected not to draw it.)
 
 # Resources 
 1. https://youtu.be/tsbCSkvHhMo?si=SVhArKgAEzzLHSV2
