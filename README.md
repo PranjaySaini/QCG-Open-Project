@@ -40,6 +40,12 @@ The if-else statement identifies the smaller factor and divides N by it to find 
 
 The factors are then printed.
 
+# Files Uploaded
+1. Factorization_code.ipynb
+2. Demonstration_on_35.ipynb
+3. Demonstration_on_115.ipynb
+4. Demonstration_on_893.ipynb (This takes the longest time to process, and since the circuit is too large to be draw, I have selected note to draw it.)
+
 # Resources 
 1. https://youtu.be/tsbCSkvHhMo?si=SVhArKgAEzzLHSV2
 2. https://pennylane.ai/qml/demos/tutorial_qft_arithmetics/
