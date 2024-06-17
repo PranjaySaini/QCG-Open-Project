@@ -32,6 +32,7 @@ The function finally returns the probability array.
 
 The user is given the option to draw the circuit of the factorization funtion. The option exists primarily to save time if the user is not interested in the circuit. Also, if the cicuit is too large, Jupyter may simply refuse to draw it.
 The number of iterations used for drawing the circuit is limited to 1 for the same reason as given above.
+For N = 35, 115 and 893, the circuit image is very large, but it can be zoomed into if one wants to verify.
 
 p and q are the factors and are initialized to the value returned by np.argmax(factorization), which returns the postion of the states with maximum probabilty, which are precisely our factors.
 
@@ -44,7 +45,7 @@ The factors are then printed.
 1. Factorization_code.ipynb
 2. Demonstration_on_35.ipynb
 3. Demonstration_on_115.ipynb
-4. Demonstration_on_893.ipynb (This takes the longest time to process, and since the circuit is too large to be draw, I have selected not to draw it.)
+4. Demonstration_on_893.ipynb (This takes the longest time to process, so to save time, I have chosen to give the x and y registers exactly the right number of qubits)
 
 # Resources 
 1. https://youtu.be/tsbCSkvHhMo?si=SVhArKgAEzzLHSV2
