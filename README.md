@@ -12,7 +12,7 @@ Using the formula n = log2(N), we find the number of qubits to assigned to the z
 As it turns out, the algorithm is very sensitive to the number of qubits we provide to the x and y registers. While there is no general formula for the number of qubits to be provided to the x and y registers, for large bi-primes, providing the x and y registers with n-2 and n-1 qubits proves to be sufficient.
 For a small bi-prime such as 6, we need at least 2 qubits for each of it's factors.
 
-The code required for "classical" multiplication was taken from https://pennylane.ai/qml/demos/tutorial_qft_arithmetics/, one of the resources provided by OCG. It uses OFT to bring the qubits out of the computational basis (the 0 and 1 basis), into the fourier basis (+ and - basis). It then carries out multiplication and returns to the computational basis, where the results can be iterpreted.
+The code required for "classical" multiplication was taken from https://pennylane.ai/qml/demos/tutorial_qft_arithmetics/, one of the resources provided by QCG. It uses QFT to bring the qubits out of the computational basis (the 0 and 1 basis), into the fourier basis (+ and - basis). It then carries out multiplication and returns to the computational basis, where the results can be iterpreted.
 
 Now, we define the iterations. The value of pi/4 * sqrt(N), can be seen as a result of the geometric interpretation of the algorithm, with each iteration "pushing" our output state to the required state by arcsin(1/sqrt(N)). Best Explanation: https://www.youtube.com/watch?v=c30KrWjHaw4.
 The user is also given the choice to set the number of iterations manually. While not recommended, this can reduce the computational load.
@@ -30,7 +30,7 @@ The Diffusion operator is simply referred to as the Grover Operator in pennylane
 The Oracle and the Diffusion Operator are iterated over.
 The function finally returns the probability array.
 
-The user is given the option to draw the circuit of the factorization funtion. The option exists primarily to save time if the user is not interested in the circuit. Also, if the cicuit is too large, Jupyter may simply refuse to draw it.
+The user is given the option to draw the circuit of the factorization function. The option exists primarily to save time if the user is not interested in the circuit. Also, if the cicuit is too large, Jupyter may simply refuse to draw it.
 The number of iterations used for drawing the circuit is limited to 1 for the same reason as given above.
 For N = 35, 115 and 893, the circuit image is very large, but it can be zoomed into if one wants to verify.
 
